@@ -25,3 +25,31 @@ print(quote)
 
 too_much_space = "                  hello               "
 print(too_much_space.strip())
+
+print('a' in 'Apple') # is case-sensitive
+
+letter = 'A'
+word = 'Apple'
+print(letter.lower() in word.lower()) # Improved
+
+movie = "Aliens"
+print("My favorite movie is {}".format(movie))
+
+# Dictionaries - key/value pairs {}
+drinks = {"White Russian": 7, "Old Fashion": 10, "Lemon Drop": 8} # Drink is the key, price is the value
+print(drinks)
+
+employees = {"Finance": ['Bob', 'Linda', 'Tina'],
+"IT": ['Gene', 'Louise', 'Teddy'], "HR": ['Jimmy Jr.', 'Mort']}
+print(employees)
+
+employees['legal'] = ['Mr. Frond']
+print(employees)
+
+employees.update({"Sales": ['Andie', 'Ollie']})
+print(employees)
+
+drinks['White Russian'] = 8
+print(drinks)
+
+print(drinks.get("White Russian"))
